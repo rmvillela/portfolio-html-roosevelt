@@ -1,0 +1,80 @@
+html {
+  scroll-behavior: smooth;
+}
+
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilos gerais */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  padding-top: 2em;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #333;
+  color: #fff;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 1em;
+}
+
+nav ul li {
+  margin: 0 1em;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Estilos das seções */
+section {
+  padding: 4em 2em;
+  /* min-height: 100vh; */
+}
+
+section:nth-child(even) {
+  background: #f4f4f4;
+}
+
+h1 {
+  margin-bottom: 1em;
+}
+
+/* Estilos do formulário de contato */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form label {
+  margin-bottom: 0.5em;
+}
+
+form input,
+form textarea {
+  margin-bottom: 1em;
+  padding: 0.5em;
+  border: 1px solid #ccc;
+}
+
+form button {
+  padding: 0.5em;
+  border: none;
+  background: #333;
+  color: #fff;
+  cursor: pointer;
+}
