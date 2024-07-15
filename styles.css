@@ -11,17 +11,24 @@ html {
 
 /* Estilos gerais */
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Open Sans", sans-serif;
   line-height: 1.6;
   padding-top: 2em;
+  background-color: #222;
+  color: #fff;
+}
+
+a {
+  display: inline-block;
 }
 
 nav {
   position: fixed;
   top: 0;
   width: 100%;
-  background: #333;
+  background: #151515;
   color: #fff;
+  z-index: 10;
 }
 
 nav ul {
@@ -40,18 +47,116 @@ nav ul li a {
   text-decoration: none;
 }
 
+@media (max-width: 768px) {
+  nav {
+    bottom: 0;
+    top: initial;
+  }
+
+  nav ul li a {
+    font-size: 1em;
+    text-align: center;
+  }
+}
+
 /* Estilos das seções */
 section {
   padding: 4em 2em;
-  /* min-height: 100vh; */
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
-section:nth-child(even) {
-  background: #f4f4f4;
+section a {
+  color: #fff;
 }
 
-h1 {
+@media (max-width: 768px) {
+  section {
+    padding: 2em;
+  }
+}
+
+h1,
+h2 {
   margin-bottom: 1em;
+  font-family: "Silkscreen", sans-serif;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 2.5em;
+}
+
+p {
+  font-size: 1.2em;
+}
+
+a {
+  font-size: 1.2em;
+}
+
+@media (max-width: 768px) {
+  h2 {
+    font-size: 2em;
+  }
+
+  p {
+    font-size: 1.1em;
+  }
+
+  a {
+    font-size: 1.1em;
+  }
+}
+
+/* Estilos da intro */
+
+#intro {
+  position: relative;
+}
+
+#intro img {
+  width: auto;
+  margin: 0 auto;
+  height: 70vh;
+  display: block;
+}
+
+#intro h1 {
+  display: inline-block;
+  position: absolute;
+  text-align: center;
+  color: #222;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 45%;
+  font-size: 2.5em;
+}
+
+@media (max-width: 768px) {
+  #intro {
+    height: 50vh;
+  }
+
+  #intro img {
+    max-height: 100%;
+    width: auto;
+    max-width: 100%;
+  }
+
+  #intro h1 {
+    font-size: 1.5em;
+  }
+}
+
+/* Estilos do portfólio */
+
+#portfolio ul {
+  list-style: none;
+}
+
+#portfolio ul li:not(:first-child) {
+  margin-top: 1em;
 }
 
 /* Estilos do formulário de contato */
